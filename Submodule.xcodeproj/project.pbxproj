@@ -7,13 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A93893B024F901AD005FDAC9 /* SubmoduleController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93893AF24F901AD005FDAC9 /* SubmoduleController.swift */; };
 		A94C3C5A24F900DE00EF8DE5 /* Submodule.h in Headers */ = {isa = PBXBuildFile; fileRef = A94C3C5824F900DE00EF8DE5 /* Submodule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A94C3C6124F900F200EF8DE5 /* Submodule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A94C3C6024F900F200EF8DE5 /* Submodule.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A93893AF24F901AD005FDAC9 /* SubmoduleController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmoduleController.swift; sourceTree = "<group>"; };
 		A94C3C5524F900DE00EF8DE5 /* Submodule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Submodule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A94C3C5824F900DE00EF8DE5 /* Submodule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Submodule.h; sourceTree = "<group>"; };
 		A94C3C5924F900DE00EF8DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A94C3C6024F900F200EF8DE5 /* Submodule.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Submodule.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				A94C3C5824F900DE00EF8DE5 /* Submodule.h */,
 				A94C3C5924F900DE00EF8DE5 /* Info.plist */,
+				A94C3C6024F900F200EF8DE5 /* Submodule.storyboard */,
+				A93893AF24F901AD005FDAC9 /* SubmoduleController.swift */,
 			);
 			path = Submodule;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 				TargetAttributes = {
 					A94C3C5424F900DE00EF8DE5 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -121,6 +128,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A94C3C6124F900F200EF8DE5 /* Submodule.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93893B024F901AD005FDAC9 /* SubmoduleController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +269,7 @@
 		A94C3C5E24F900DE00EF8DE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FUNW4GUS24;
@@ -276,6 +286,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dcsp.Submodule;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +295,7 @@
 		A94C3C5F24F900DE00EF8DE5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = FUNW4GUS24;

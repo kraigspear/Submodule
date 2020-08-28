@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xVz-ba-ArG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Submodule Controller-->
+        <scene sceneID="dpf-Mt-scD">
+            <objects>
+                <viewController id="xVz-ba-ArG" customClass="SubmoduleController" customModule="Submodule" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lSi-1k-Vbv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm a submodule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dG1-De-E60">
+                                <rect key="frame" x="88" y="61" width="238" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zeo-UT-qEx">
+                                <rect key="frame" x="182" y="433" width="50" height="30"/>
+                                <state key="normal" title="Tap Me"/>
+                                <connections>
+                                    <action selector="tapAction:" destination="xVz-ba-ArG" eventType="touchUpInside" id="Ng1-94-utN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dG1-De-E60" firstAttribute="top" secondItem="2cb-2V-vVq" secondAttribute="top" constant="17" id="0N1-XF-81J"/>
+                            <constraint firstItem="zeo-UT-qEx" firstAttribute="centerX" secondItem="lSi-1k-Vbv" secondAttribute="centerX" id="m9c-Hr-YVH"/>
+                            <constraint firstItem="zeo-UT-qEx" firstAttribute="centerY" secondItem="lSi-1k-Vbv" secondAttribute="centerY" id="xFl-0w-gES"/>
+                            <constraint firstItem="dG1-De-E60" firstAttribute="centerX" secondItem="lSi-1k-Vbv" secondAttribute="centerX" id="zUd-xc-hcv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2cb-2V-vVq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F25-87-ZXC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="74" y="92"/>
+        </scene>
+    </scenes>
+</document>
